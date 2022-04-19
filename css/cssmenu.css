@@ -38,7 +38,34 @@ body{
     font-size: 20px;
     
 }
-/*----------------------------------------*/
+/*---------------contenedores Nosotros-------------------------*/
+.contenedor1{
+    padding:60px;
+        margin-right: 0px;
+        height: 500px;
+        width: 1000px;
+        background: rgb(0, 0, 0);
+        float: left;
+        margin-left: 0px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    
+    .contenedor1:hover{
+
+		border: 3px solid rgb(255, 0, 0);
+		
+	}
+
+    .contenedor2{
+        
+        margin: 0px;
+        background-color: rgb(19, 18, 18);
+        height: 300px;
+        width: 800px;
+        float: left;
+        
+    
+    }
 /*-------------------hover productos---------------------*/
 body{
 	margin:0;
@@ -140,10 +167,22 @@ body{
 }
 
 
-/*responsive*/
-
 @media(max-width: 767px){
 	.services .content .box {
+    width:100%;
+    
+}
+}
+
+/*border hover*/
+
+.bhover{
+
+    border:solid,red;
+}
+
+@media(max-width: 767px){
+	.container2 {
     width:100%;
     
 }
