@@ -9,21 +9,21 @@ body{
 }
 /*---------Nosotros---------*/
 .tn{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Kanit', sans-serif;
     font-size: 50px;
 }
 
 .tc{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Kanit', sans-serif;
     font-size: 35px;
 }
 
 .tc2{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Kanit', sans-serif;
     font-size: 25px;
@@ -44,10 +44,10 @@ body{
         margin-right: 0px;
         height: 500px;
         width: 1000px;
-        background: rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
         float: left;
         margin-left: 0px;
-        border: 2px solid rgb(0, 0, 0);
+   
     }
 	.contenedor2{
         
@@ -55,44 +55,39 @@ body{
         background-color: rgb(19, 18, 18);
         height: 380px;
         width: 800px;
-        float: left;    
+        float: left;   
+		
     }	
   
 /*---------------------------hover Nosotros----------------------------------*/
+
 .contenedor1:hover{
 
-	border: 3px solid rgb(255, 0, 0);
-	
+	border: 2px solid rgb(255, 0, 0); 
 }
 
-.image {
-	height: 490px;
-    width: 902px;
+.contenedor2:hover{
+
+	border: 2px solid rgb(255, 0, 0); 
 }
-figure {
-	overflow: hidden;
-	margin: 0 10px;
-}
-h3 {
-	color: #000;
-	margin-top: 40px;
-}
-p {
-	padding: 0 10px;
-}
-.image img {
-	display: block;
-	width: 100%;
-	height: auto;
-	cursor: pointer;
-}
-.image #zoom-In figure img {
-	transform: scale(1);
-	transition: 0.3s ease-in-out;
-}
-.image #zoom-In figure:hover img {
-	transform: scale(1.5);
-}
+
+
+
+.div1 {
+	position: relative;
+  }
+  
+  .div1 .div2 {
+	position: absolute;  
+	top: 0;  
+	left: 0;
+	opacity: 0;
+	transition: .5s;
+  }
+  
+  .div1:hover .div2 {
+	opacity: 1;
+  }
 /*-------------------hover productos---------------------*/
 body{
 	margin:0;
@@ -174,7 +169,7 @@ body{
 }
 .services .content .box .inner .icon{
 	font-size:50px;
-	color:rgb(0, 0, 0);
+	color:rgb(255, 255, 255);
 	transition: color .8s ease;
 }
 .services .content .box:hover .inner .icon{

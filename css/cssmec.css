@@ -1,0 +1,165 @@
+/*por defecto*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+/*fondo foto*/
+body{
+    background-image:url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20em;
+    align-items: center;
+    justify-content: center;
+}
+
+/*titulo pagina*/
+
+.h52{
+   color: red;
+   font-size: 10px;
+}
+.tp{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
+/*linea separacion*/
+
+.linea{
+    background-color: white;
+}
+/*css container*/
+
+.container1{
+    background-color: rgba(0, 0, 0, 0.836);
+    
+}
+
+/* css cartas*/
+.card{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(73,69,52,0.4);
+    margin: 40px;
+}
+
+.card .content{
+
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+
+.card .content .img{
+    height: 50%;
+    margin-bottom: 20px;
+
+}
+
+.card .content .img img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.card .content span{
+
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(to right, rgb(112, 0, 0),red);
+    transform: rotate(-35deg);
+    top: -50px;
+    left: -100px;
+}
+
+.card .content h4{
+    font-size: 18px;
+    color:black;
+    margin-bottom: 5px;
+}
+
+.card .content p{
+    font-size: 13px;
+    color:black;
+    margin-top: 10px;
+}
+
+.card .content h6{
+    font-size: 13px;
+    color:rgb(158, 0, 0);
+}
+
+.card .links {
+    position: absolute;
+    z-index: 90;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(228, 228, 228, 0.5);
+    box-shadow: 2px 3px 5px rgba(73,69,52,0.4);
+    padding: 20px;
+    align-items: center;
+    right: 10px;
+    top: 15px;
+    transition: .5s;
+}
+
+.card:hover .links{
+
+    right: -50px;
+    border-radius: 0 10px 10px 0;
+}
+
+.card .links a{
+font-size: 20px;
+color: rgb(241, 0, 0);
+}
+
+.card .links a:nth-child(1):hover{
+    color: rgb(62, 62, 238);
+}
+
+.card .links a:nth-child(2):hover{
+    color: rgb(62, 132, 238);
+}
+
+.card .links a:nth-child(3):hover{
+    color: rgb(122, 7, 151);
+}
+.card .links a:nth-child(4):hover{
+    color: rgb(4, 148, 11);
+}
+
+
+
+
+@media(max-width: 767px){
+	.card .content .img .content body{
+    width:100%;
+	height: 100%;
+    
+}
+}
