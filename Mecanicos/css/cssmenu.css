@@ -1,0 +1,314 @@
+.menufijo {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+
+body{
+    background-image:url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20em;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*--------css Iñaki-----*/
+.btn-centered{
+	padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto 0px auto;
+}
+
+.login-img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width: 150px;
+	height: 150px;
+}
+
+.trabajos{
+	background-color: #141414af;
+	min-height: 100px;
+	width: 100%;
+	float: left;
+	padding:100px 0;
+}
+.img-card{
+	width: 200px;
+	height: 200px;
+}
+
+.img-contacto{
+	height: 500px;
+    width: 902px;
+}
+.img-contacto #zoom-In figure img {
+	transform: scale(1);
+	transition: 0.3s ease-in-out;
+}
+.img-contacto #zoom-In figure:hover img {
+	transform: scale(1.5);
+}
+
+
+/*---------Nosotros---------*/
+
+.tn{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+}
+
+.tc{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+}
+
+.tc2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    
+}
+
+.tc3{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    
+}
+/*---------------contenedores Nosotros-------------------------*/
+.contenedor1{
+    padding:60px;
+        margin-right: 0px;
+        height: 500px;
+        width: 1000px;
+        background: rgb(255, 255, 255);
+        float: left;
+        margin-left: 0px;
+   
+    }
+	.contenedor2{
+        
+        margin: 0px;
+        background-color: rgb(19, 18, 18);
+        height: 380px;
+        width: 800px;
+        float: left;   
+		
+    }
+	.contenedor4{
+		padding:60px;
+			margin-right: 0px;
+			height: 200px;
+			width: 1000px;
+			background: rgb(49, 49, 49);
+			float: left;
+			margin-left: 0px;
+			align-items: center;
+	   
+		}
+	/*contacto*/
+	.contenedor3{
+		padding:60px;
+			margin-right: 0px;
+			height: 550px;
+			width: 1000px;
+			background: rgb(0, 0, 0);
+			float: left;
+			margin-left: 0px;
+	}
+			.tn1{
+				color: rgb(255, 255, 255);
+				text-align: center;
+				font-family: 'Kanit', sans-serif;
+				font-size: 50px;
+			}
+			.tc4{
+				color: rgb(255, 255, 255);
+				text-align: center;
+				font-family: 'Kanit', sans-serif;
+				font-size: 25px;
+				margin-top: 30px;
+				
+			}
+  
+/*---------------------------hover Nosotros----------------------------------*/
+
+.contenedor1:hover{
+
+	border: 2px solid rgb(255, 0, 0); 
+}
+
+.contenedor2:hover{
+
+	border: 2px solid rgb(255, 0, 0); 
+}
+  .div1{
+	  position: relative;
+  }
+  
+  .div1 .div2 {
+	position: absolute;  
+	top: 0;  
+	left: 0;
+	opacity: 0;
+	transition: .5s;
+  }
+  
+  .div1:hover .div2 {
+	opacity: 1;
+  }
+/*-------------------hover productos---------------------*/
+body{
+	margin:0;
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.services{
+	background-color: #000000;
+	min-height: 100vh;
+	width: 100%;
+	float: left;
+	padding:100px 0;
+}
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.services .heading{
+	margin-bottom: 60px;
+	width: 100%;
+	float: left;
+}
+.services .heading h1{
+  text-align: center;
+  font-size: 40px;
+  color:white;
+  margin:0;
+}
+
+.services .content{
+	float: left;
+	width: 100%;
+}
+.services .content .box{
+	width: 33.33%;
+	float: left;
+	padding:15px;
+}
+.services .content .box .inner{
+	padding:30px;
+	text-align: center;
+	position: relative;
+}
+
+.services .content .box .inner::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom:0;
+	width:0;
+	box-sizing: border-box;
+	height: 0;
+	border-bottom:3px solid transparent;
+	border-left: 3px solid transparent;
+	transition: all .8s ease;
+}
+.services .content .box .inner::after{
+	content: '';
+	position: absolute;
+	right:0;
+	top:0;
+	width:0;
+	box-sizing: border-box;
+	height:0;
+	border-top:3px solid transparent;
+	border-right: 3px solid transparent;
+	transition: all .8s ease;
+}
+.services .content .box:hover .inner::after,
+.services .content .box:hover .inner::before{
+   border-color: red;
+   width: 100%;
+   height: 100%;
+}
+.services .content .box .inner .icon{
+	font-size:50px;
+	color:rgb(255, 255, 255);
+	transition: color .8s ease;
+}
+.services .content .box:hover .inner .icon{
+	color:red;
+}
+.services .content .box .inner h3{
+	font-size: 20px;
+	font-weight: normal;
+	color:#000;
+	margin:20px 0;
+}
+
+.services .content .box .inner p{
+	font-size:15px;
+	color:#444444;
+	line-height:24px;
+}
+
+
+@media(max-width: 767px){
+	.services .content .box {
+    width:100%;
+    
+}
+}
+
+/*border hover*/
+
+.bhover{
+
+    border:solid,red;
+}
+
+
+/*cambiar tamaño carousel*/
+
+/*responsivo*/
+@media(max-width: 767px){
+	.contenedor2 {
+    width:80%;
+    
+}
+}
+
+@media(max-width: 767px){
+	.contenedor1 {
+    width:100%;
+    
+}
+}
+
+@media(max-width: 1000px){
+	.carousel, .carousel-inner, .carousel-item> .item > img  {
+    width:100%;
+	height: 100%;
+    
+}
+}
